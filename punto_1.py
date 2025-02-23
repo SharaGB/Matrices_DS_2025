@@ -28,8 +28,7 @@ def suma_matriz(matriz):
 def main():
     matriz = generar_matriz(6, 6)
     imprimir_matriz(matriz)
-    print(f"La suma de los números almacenados en la matriz es: {
-            suma_matriz(matriz)}")
+    print(f"La suma de los números almacenados en la matriz es: {suma_matriz(matriz)}")
 
 
 if __name__ == "__main__":
