@@ -32,16 +32,16 @@ def imprimir_matriz(matriz):
 def main():
     # Crear la matriz de productos
     matriz_productos = [
-        [Producto("Producto 1", 100, 10), Producto("Producto 2", 200, 20), Producto("Producto 3", 300, 30)],
-        [Producto("Producto 4", 400, 40), Producto("Producto 5", 500, 50), Producto("Producto 6", 600, 60)],
-        [Producto("Producto 7", 700, 70), Producto("Producto 8", 800, 80), Producto("Producto 9", 900, 90)]
+        [Producto("iPhone 16 Plus", 100, 10), Producto("MacBook Air", 200, 20), Producto("iPad", 300, 30)],
+        [Producto("iPhone 15 Pro Max", 400, 40), Producto("MacBook Pro", 500, 50), Producto("Apple Watch Ultra", 600, 60)],
+        [Producto("AirTag", 700, 70), Producto("iMac", 800, 80), Producto("AirPods Pro", 900, 90)]
     ]
 
     print("Matriz de productos:")
     imprimir_matriz(matriz_productos)
 
     # Nombre del producto a buscar
-    producto = "Producto 6"
+    producto = "MacBook Pro"
     ubicacion = buscar_producto(matriz_productos, producto)
 
     if ubicacion:
