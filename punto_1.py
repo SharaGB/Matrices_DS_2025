@@ -11,7 +11,6 @@ def generar_matriz(filas, columnas):
         for j in range(columnas):
             fila.append(randint(1, 100))
         matriz.append(fila)
-
     return matriz
 
 
