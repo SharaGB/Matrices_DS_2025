@@ -11,7 +11,7 @@ class Producto:
         self.cantidad = cantidad
 
     def __repr__(self):
-        return f'Producto("{self.nombre}", Precio: {self.precio}, Cantidad: {self.cantidad})'
+        return f'Producto("{self.nombre}", "Precio: {self.precio}", "Cantidad: {self.cantidad}")'
 
 
 # Función para calcular el inventario total
