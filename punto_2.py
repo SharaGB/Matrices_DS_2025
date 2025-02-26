@@ -11,7 +11,6 @@ def generar_matriz(filas, columnas):
         for j in range(columnas):
             fila.append(randint(1, 100))
         matriz.append(fila)
-
     return matriz
 
 
@@ -33,7 +32,6 @@ def encontrar_maximo(matriz):
     # Ajustar posición comenzando en 1
     posicion = (posicion[0] + 1, posicion
                 [1] + 1)  # (fila, columna)
-
     return max_valor, posicion
 
 
