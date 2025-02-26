@@ -42,10 +42,13 @@ def suma_columnas(matriz):
 def main():
     matriz = generar_matriz(8, 8)
     imprimir_matriz(matriz)
+    
     suma_filas_vector = suma_filas(matriz)
-    print(f"La suma de cada fila es: {suma_filas_vector}")
     suma_columnas_vector = suma_columnas(matriz)
+    
+    print(f"La suma de cada fila es: {suma_filas_vector}")
     print(f"La suma de cada columna es: {suma_columnas_vector}")
+    
     vector_resultante = suma_filas_vector + suma_columnas_vector
     print(f"El vector resultante es: {vector_resultante}")
 
