@@ -12,7 +12,6 @@ def generar_matriz(filas, columnas):
         for j in range(columnas):
             fila.append(randint(1, 100))
         matriz.append(fila)
-
     return matriz
 
 
@@ -26,7 +25,6 @@ def suma_filas(matriz):
 
     for fila in matriz:
         suma_filas.append(sum(fila))
-
     return suma_filas
 
 
@@ -38,7 +36,6 @@ def suma_columnas(matriz):
         for fila in matriz:
             sum_column += fila[i]
         suma_columnas.append(sum_column)
-
     return suma_columnas
 
 
