@@ -19,7 +19,6 @@ def ordenar_asientos_por_precio(matriz):
         fila.sort(key=lambda asiento: asiento.precio)
 
 
-# Función para imprimir la matriz de asientos
 def imprimir_matriz(matriz):
     for i in matriz:
         print(i)
