@@ -15,8 +15,8 @@ def generar_matriz(filas, columnas):
 
 
 def imprimir_matriz(matriz):
-    for i in matriz:
-        print(i)
+    for fila in matriz:
+        print(" | ".join([str(x).center(3) for x in fila]))
 
 
 def suma_matriz(matriz):
@@ -26,8 +26,9 @@ def suma_matriz(matriz):
 
 def main():
     matriz = generar_matriz(6, 6)
+
     imprimir_matriz(matriz)
-    print(f"La suma de los números almacenados en la matriz es: {suma_matriz(matriz)}")
+    print(f"\nLa suma de los números almacenados en la matriz es: {suma_matriz(matriz)}")
 
 
 if __name__ == "__main__":
