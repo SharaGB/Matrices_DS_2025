@@ -15,8 +15,8 @@ def generar_matriz(filas, columnas):
 
 
 def imprimir_matriz(matriz):
-    for i in matriz:
-        print(i)
+    for fila in matriz:
+        print(" | ".join([str(x).center(3) for x in fila]))
 
 
 def encontrar_maximo(matriz):
@@ -39,7 +39,7 @@ def main():
     matriz = generar_matriz(5, 5)
     imprimir_matriz(matriz)
     max_valor, posicion = encontrar_maximo(matriz)
-    print(f"El número mayor almacenado en la matriz es: {max_valor} en la posición {posicion}")
+    print(f"\nEl número mayor almacenado en la matriz es: {max_valor} en la posición {posicion}")
 
 
 if __name__ == "__main__":
